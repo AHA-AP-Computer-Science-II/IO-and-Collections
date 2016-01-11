@@ -1,5 +1,3 @@
-package chapter15;
-
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.ObjectInputStream;

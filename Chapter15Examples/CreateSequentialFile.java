@@ -1,5 +1,3 @@
-package chapter15;
-
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.nio.file.Files;

@@ -1,5 +1,3 @@
-package chapter15;
-
 public enum MenuOption {
 
 	// declare contents of enum type

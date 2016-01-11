@@ -1,5 +1,3 @@
-package chapter15;
-
 import java.io.Serializable;
 
 public class Account implements Serializable {

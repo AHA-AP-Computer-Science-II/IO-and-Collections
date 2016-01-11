@@ -1,5 +1,3 @@
-package chapter15;
-
 import java.io.FileNotFoundException;
 import java.util.Formatter;
 import java.util.FormatterClosedException;
