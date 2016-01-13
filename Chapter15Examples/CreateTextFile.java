@@ -7,13 +7,13 @@ import java.util.Scanner;
 public class CreateTextFile {
 
 	private static Formatter output; // outputs text to a file
-	
+
 	public static void main(String[] args) {
 		openFile();
 		addRecords();
 		closeFile();
 	}
-	
+
 	// open file clients.txt
 	public static void openFile() {
 		try {
@@ -26,13 +26,13 @@ public class CreateTextFile {
 			System.exit(1); // terminate the program
 		}
 	}
-	
+
 	// add record to file
 	public static void addRecords() {
 		Scanner input = new Scanner(System.in);
-		System.out.printf("%s%n%s%n? ", "Enter account number, first name, last name and balance.", 
-										"Enter end-of-file indicator to end input.");
-		
+		System.out.printf("%s%n%s%n? ", "Enter account number, first name, last name and balance.",
+				"Enter end-of-file indicator to end input.");
+
 		while (input.hasNext()) { // loop until end-of-file indicator
 			try {
 				// output new record to file; assumes valid input
@@ -42,13 +42,13 @@ public class CreateTextFile {
 				break;
 			} catch (NoSuchElementException elementException) {
 				System.err.println("Invalid input. Please try again.");
-				input.nextLine(); //discard input so user can try again
+				input.nextLine(); // discard input so user can try again
 			}
-			
+
 			System.out.print("? ");
 		} // end while
 	} // end method addRecords
-	
+
 	// close file
 	public static void closeFile() {
 		if (output != null)

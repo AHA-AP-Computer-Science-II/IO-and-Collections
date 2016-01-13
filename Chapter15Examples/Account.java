@@ -6,12 +6,12 @@ public class Account implements Serializable {
 	private String firstName;
 	private String lastName;
 	private double balance;
-	
+
 	// initializes an Account with default values
 	public Account() {
 		this(0, "", "", 0.0); // call other constructor
 	}
-	
+
 	// initializes an Account with provided values
 	public Account(int account, String firstName, String lastName, double balance) {
 		this.account = account;
@@ -19,12 +19,12 @@ public class Account implements Serializable {
 		this.lastName = lastName;
 		this.balance = balance;
 	}
-	
+
 	// set account number
 	public void setAccount(int account) {
 		this.account = account;
 	}
-	
+
 	// get account number
 	public int getAccount() {
 		return account;
@@ -34,7 +34,7 @@ public class Account implements Serializable {
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-	
+
 	// get first name
 	public String getFirstName() {
 		return firstName;
@@ -58,6 +58,6 @@ public class Account implements Serializable {
 	// get balance
 	public double getBalance() {
 		return balance;
-	}	
-	
+	}
+
 } // end class Account

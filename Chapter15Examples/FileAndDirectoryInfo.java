@@ -9,12 +9,12 @@ public class FileAndDirectoryInfo {
 
 	public static void main(String[] args) throws IOException {
 		Scanner input = new Scanner(System.in);
-		
+
 		System.out.println("Enter file or directory name:");
-		
+
 		// create Path object based on user input
 		Path path = Paths.get(input.nextLine());
-		
+
 		if (Files.exists(path)) { // if path exists, output info about it
 			// display file (or directory) information
 			System.out.printf("%n%s exists%n", path.getFileName());
@@ -24,20 +24,20 @@ public class FileAndDirectoryInfo {
 			System.out.printf("Size: %s%n", Files.size(path));
 			System.out.printf("Path: %s%n", path);
 			System.out.printf("Absolute Path: %s%n", path.toAbsolutePath());
-			
+
 			if (Files.isDirectory(path)) { // output directory listing
 				System.out.printf("%nDirectory contents:%n");
-				
+
 				// object for iterating through a directory's contents
 				DirectoryStream<Path> directoryStream = Files.newDirectoryStream(path);
-				
+
 				for (Path p : directoryStream)
 					System.out.println(p);
 			}
-			
+
 		} else { // not file or directory, output error message
 			System.out.printf("%s does not exist%n", path);
 		}
 	} // end main
-	
+
 } // end class FileAndDirectoryInfo

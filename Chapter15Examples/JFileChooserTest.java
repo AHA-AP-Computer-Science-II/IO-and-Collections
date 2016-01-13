@@ -10,5 +10,5 @@ public class JFileChooserTest {
 		application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		application.setVisible(true);
 	}
-	
+
 }
