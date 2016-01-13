@@ -1,9 +1,9 @@
+// Fig. 1.11: Algorithms1.java
+// Collections methods reverse, fill, copy, max and min
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-
-// Fig. 1.11: Algorithms1.java
-// Collections methods reverse, fill, copy, max and min
 
 public class Algorithms1 {
 

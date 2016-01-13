@@ -1,9 +1,9 @@
+// Fig. 16.10: DeckOfCards.java
+// Card shuffling and dealing with Collections method shuffle.
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-
-// Fig. 16.10: DeckOfCards.java
-// Card shuffling and dealing with Collections method shuffle.
 
 // class to represent a Card in a deck of cards
 class Card {
